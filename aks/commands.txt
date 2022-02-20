@@ -111,6 +111,13 @@ kubectl apply -f .\aks\
 --Manual scale
 kubectl scale --replicas=3 shoppingclient-deployment
 
+
+--Troubleshooting
+kubectl logs id-pod
+kubectl describe pod id-pod
+kubectl exec -it id-pod sh
+printenv (variables environment)
+
 --
 Clean All AKS and Azure Resources
 
